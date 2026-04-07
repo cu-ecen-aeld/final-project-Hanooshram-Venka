@@ -7,7 +7,8 @@
 ## Sprint 1 Release
 This repository contains the foundational operating system configuration and the network control architecture for our real-time audio DSP project.
 
-### 1. Buildroot 
+### 1. Buildroot Architecture
+This repository uses a Git Submodule linked to the official Buildroot repository. The base_external project tree contains our custom `aesd_final_project_defconfig`, which hard-codes the necessary ALSA and USB audio drivers into the Linux kernel. 
 
 
 ### 2. Network Control Pathway (`/socket_server`)
