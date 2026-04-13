@@ -13,3 +13,6 @@ This repository uses a Git Submodule linked to the official Buildroot repository
 
 ### 2. Network Control Pathway (`/socket_server`)
 This folder contains `socket_daemon.c`, a custom TCP socket server. When executed on the Raspberry Pi, it detaches from the terminal and runs in the background as a daemon listening on Port 9000. It acts as an interface allowing a host laptop to send string commands over the network. In Sprint 2, this daemon will be responsible for catching user commands and updating the real-time DSP audio parameters.
+
+## Sprint 2 release
+Addeed the main.c file which uses the wav_parser, alsa_playback and socket_daemon codes all consolidated into one file- Involves Multithreading, Producer-Consumer architecture.
