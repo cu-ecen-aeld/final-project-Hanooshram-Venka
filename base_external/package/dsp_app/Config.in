@@ -1,0 +1,9 @@
+config BR2_PACKAGE_DSP_APP
+	bool "dsp_app"
+	depends on BR2_INSTALL_LIBSTDCPP
+	select BR2_PACKAGE_ALSA_LIB
+	select BR2_PACKAGE_LIBSNDFILE
+	select BR2_PACKAGE_SOUNDTOUCH
+	help
+	  AESD Final Project: Multithreaded C++ Audio Engine with real-time 
+	  SoundTouch DSP, IPC socket control, and A-to-B looping capabilities.
